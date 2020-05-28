@@ -1,0 +1,22 @@
+Web Development Notes
+
+I am watching this series of videos on web development:
+    https://www.youtube.com/watch?v=gQojMIhELvM&feature=youtu.be
+
+Video 1: how to make a website
+
+The first thing that the video recommends is to install and start using Visual Studio Code, which I am
+    now using.
+Next, install the 'Live Server' extension in VS Code.
+Open a folder, and create a file named 'index.html'
+    This is the first file opened when a website is loaded.
+Start with adding '!' to the document, and press enter or tab.
+    With this, VS Code creates an empty website template.
+Between the two '<body>' tags, write some text.
+Finally, right click the file in the file explorer in VS Code, and click 'run with live server'.
+This opens a tab in the default web browser at a local host port, and shows the index.html render.
+    This also reloads the page each time the html file is saved.
+
+The end, this is my first website with HTML.
+
+I'll make a new text document for the next video.

@@ -1,0 +1,84 @@
+Web Development Notes, HTML for Beginners
+
+Video 2: HTML for Beginners
+https://www.youtube.com/watch?v=RjHflb-QgVc
+
+Every HTML document must have the following at the top of the file:
+<!DOCTYPE html>
+    This declares that the file is in fact an html file.
+That is a tag, where a 'tag name' and 'attributes' are contained within the '<>'.
+    The 'attributes' are optional.
+By default, VS Code makes a 'closing tag' when you add the '>' to a tag.
+    A 'closing tag' is a tag with a '/' in front, such as:
+    <html> -> the tag
+    </html> -> the closing tag
+Text contained between the opening tag (first instance of the tag) and closing tag is considered 'inside the tag'.
+Self-closing tags look like this:
+<html />
+    This closes the tag when it is called. It's useful for content that doesn't need multiple lines to be shown on the page, like a file.
+
+Attributes are variables after a tag.
+For example, here is a image tag with attribute 'width' as 300:
+<img width="300" />
+Attributes are separated by a space between themselves and between 'tag names' and a slash if in the tag.
+
+In general, a working level of html is comprised of knowing common tag names and attributes.
+
+Now, the instructor goes over those common tag names and attributes.
+
+Every html page needs at least three tags:
+1. html
+2. head
+3. body
+
+The head and body tags need to be contained within the html tag, where formatting is not important.
+HTML doesn't count white space, so as long as the head and body tags are within the html tag, how they are organized doesn't matter.
+For personal preference, I'll follow a tabbed format of:
+<html>
+    <head>
+        <body>
+        </body>
+    </head>
+</html>
+Indenting is a good idea to keep things organized.
+<head>
+    The text contained in this tag is what is displayed in the tab of the web browser
+<title>
+    The text contained in this tag is what is displayed in the tab of the web browser.
+<body>
+    The text/files contained in this tag is what is displayed in the web page.
+<h1>
+    This is tag for header, large text.
+<h2>...<h6>
+    These are different sizes of header content.
+<p>
+    This is a tag for a paragraph of text.
+    Using multiple of these separates the paragraphs with a line of space.
+<br/>
+    This is a self closing tag or a line break.
+<strong>
+    This is to bold some text.
+<em>
+    This is italics.
+<button>
+    Makes a button that can be clicked.
+    Note that javascript is what adds functions to html pages.
+<li>
+    Bulleted lists.
+<ul>
+    Unordered list.
+<ol>
+    Ordered list.
+Contain <li> and information between the <ul> and <ol> tags.
+
+That's basic HTML.
+
+CSS is how you add style to pages, more on that next.
+
+For now, check out and play with my index.html file for testing.
+
+I had to look this up, comments in html look like this:
+<!--
+Some comment here
+-->
+VS Code colors comments in html with green.

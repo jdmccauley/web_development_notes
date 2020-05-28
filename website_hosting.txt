@@ -1,0 +1,64 @@
+Web Development Notes, Hosting
+
+Video: How To Make A Website From HTML & CSS - FAST, CHEAP, EASY
+https://www.youtube.com/watch?v=5iUB31h2Hzs&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=4
+
+I started watching this video out of curiosity, and it's about how to host a website.
+
+Steps:
+1. Purchase a domain name
+2. Subscribe to a shared hosting server
+
+Purchasing a domain name
+There are many places to purchase domains, the one recommended in the video is:
+https://iwantmyname.com/
+
+Apparently .com domain names tend to be cheapest, but hardest to find for the desired names.
+If you are flexible with the domain name, .com is a great way to go.
+The iwantmyname.com offers domain privacy for free, which keeps your personal information private when you go on the domain.
+    This is apparently important to get.
+Also, .com domains do well on search engine optimization, so that's important to note as well.
+
+Once a domain is owned, nameservers can be changed. These are urls that point to the domain.
+
+Shared Hosting
+You purchase subscriptions to these to host the website at the domain.
+You upload all of the website files to the host, and they keep a server running with the files, and serve to the domain name.
+SSL certificates are good to have for hosting a domain.
+
+hostgator.com is supposedly a great host.
+Note that they give you an option to make a gmail with the domain name, that's useful. Google does this for $5/month.
+
+The 'nameserver' is a server's address. You can set this to point from a domain name, letting domain_name.com be served by the nameserver.
+
+You could set up your own computer to be the server, but this can be a security issue.
+    If you host on your own machine, your machine can be accessed by users if you do not follow the best precautions.
+
+
+Outside of the video:
+Github Pages
+Github lets you host repositories for free.
+You get one for your username, and unlimited ones for your projects.
+
+Username site:
+Make a repo named 'username.github.io'
+    Push your files to the repo.
+    Visit https://username.github.io
+        Your page is here.
+
+Project site:
+You can use themes to design the page and import your README.md as well.
+For scratch (my interest):
+    1. Make index.html for the repo
+    2. Settings ->Github Pages
+    3. Set master branch as the source
+    4. Visit https://username.github.io/repo_name
+        This is the site!
+
+For themes:
+    You can convert a repo to a Github Pages site.
+    Choose a theme.
+    Edit content as you please, the files should all be there for the site.
+    Visit https://username.github.io/repo_name
+        This is the site!
+

@@ -1,0 +1,46 @@
+Web Development Notes, CSS for Beginners
+
+Video 3: CSS for Beginners
+https://www.youtube.com/watch?v=J35jug1uHzE
+
+CSS = Cascading Style Sheets
+
+To add CSS to a html page, you need two things:
+1. Tag for 'style' to set as CSS
+2. Tag for 'link' to link to another file for CSS code
+
+<style>
+    Within this tag, you encase CSS code.
+    You write 'rules' for tags with 'selectors'.
+
+<selector>
+    This is a CSS tag that contains items like 'selector' which has 'properties'.
+    The syntax is similar to a python dictionary, with 'properties' and 'values' within {}
+        The thing to note is that properties need ';' at the end of lines
+
+Syntax:
+<html>
+    <style>
+        selector {
+            property: value;
+        }
+    </style>
+</html>
+
+The selector 'selects' a tag in the html file, and you can change the 'property'.
+
+For example:
+<html>
+ <style>
+    h1 {
+        color: red;
+    }
+ </style>
+</html>
+
+This makes text with the h1 tag red in the web page.
+For color, you can declare it 'rgb(value,value,value)' for any color of the color palette.
+    VS Code lets you click and drag a pop up to the color, and edits the code to the rgb value.
+There's many propertiess: opacity, background (color), font-family (among many other font properties)...
+
+For font-family, you can give many font names and should, since not all machines have the same fonts installed.
