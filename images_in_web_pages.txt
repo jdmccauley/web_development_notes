@@ -1,0 +1,57 @@
+Web Development Notes, Embedding Images
+
+Video 7: HTML & CSS Tutorial - Ways to code images...and how to do it well
+https://www.youtube.com/watch?v=7cwRaTqR4k0
+
+This video covers how to add images to web pages.
+This is nearly the end of the series covering the two things needed for a web page: HTML and CSS.
+Those two languages are needed for static pages with no functionality.
+Functionality is the next thing to read on, with JavaScript.
+
+Most of HTML and CSS is making a layout and filling the layouts with content.
+
+There are two major ways to add images:
+1. Add image as a tag with <img>
+2. Add image as a background (this is CSS)
+
+You use the image with <img> when it is content.
+Using CSS to add image as background is more common.
+    This makes the image part of the design, not content.
+
+CSS with backgrounds
+It's common to link an image to a home page.
+To do this, you can make a link with the <a> tag.
+    This is HTML.
+    NOTE: Always add text to the link. There needs to be a text visual in case of visually-impared users (using a screen reader)
+In the CSS:
+    If you class the tag, make a rule for the class where the background is some image.
+    Typically make this display: 'inline-block;'
+    You can then use pixel numbers to move the text off the screen.
+    'background-image: url("path_to_image");
+    'background-size: XXXpx;
+    'background-repeat: no-repeat;
+    'height: XXpx;
+    position: relative;'
+        It is common practice to size the image to double the display, then resize it down.
+        This is to accomodate high and low resolution screens.
+    
+Image Tags
+<img src="path_to_image" alt="decription of image">
+    The src tells where to fetch the image.
+    The alt tells what is read when using a screen reader.
+        Also the alt text helps you show up on search images.
+You can add captions with a <h1> (or other size) tag.
+Altneratively, use the figure tag:
+<figure>
+    <img ...></img>
+    <figcaption>Description Here</figcaption>
+</figure>
+    This is a proper way to give an image with caption, using the 'figure' tag.
+    You still have the alt text for the image, the caption is different.
+
+Note that a CSS property 'border-radius: X%;'
+    This les you turn an image into a circle.
+
+There's a ton of CSS properties. You may use a few commonly, and use some once in a lifetime.
+
+Last video in the series: responsive design (which is for mobile devices)

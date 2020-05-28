@@ -1,0 +1,42 @@
+Web Development Notes, Pages
+
+Video 5: HTML CSS TUTORIAL FOR BEGINNERS - multiple pages
+https://www.youtube.com/watch?v=iXSSHlOe47s
+
+Now to talk about how to make multiple pages for a website with HTML and CSS.
+
+index.html
+    This is the home page for a website.
+
+Copy and paste this page and save the files as other_names.html
+    The other html files become the other pages.
+
+<a>
+    This tak makes a link.
+<a href="file.html">some_name</a>
+    This is how you make a hyperlink in HTML to another html file.
+    Note that the tag is 'a', and the attribute is 'href = "file.html"'
+    The text displayed for the link is 'some_name'
+
+So the <a> tag is how you link to other pages, and linking to other html files is how you make the other pages.
+
+So it was mentioned before about having CSS files in a web page directory. What is that for?
+
+Note that you can use directories for pages.
+    Include a directory with a slash for linking.
+    Ex: href="pages/test.html"
+        This is to go down a level.
+    Going up a level, use '../upper_level_directory'
+        The two dots are how you go up a level.
+
+'External style sheets' are CSS files that are used to define styling for pages.
+    You can have a css file seperate from the html pages.
+    This removed the need for the <styles> tag in html files.
+    To include a css file for styling:
+    <link rel="stylesheet" href="cs_file_name.css">
+        The 'rel=stylesheet' is very important.
+
+This s great practice to declutter css styling in html files.
+You can have many styling files, just name them differently for each page.
+
+Next video: CSS selectors for individual tags (in case you don't cant all <section> tags styled the same)

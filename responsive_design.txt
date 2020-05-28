@@ -1,0 +1,56 @@
+Web Development Notes, Responsive Design
+
+Video 8: Responsive Design Tutorial - Tips for making web sites look great on any device
+https://www.youtube.com/watch?v=fgOO9YUFlGI
+
+Responsive Design = making a web site look great on all devices
+
+Sometimes when you design a page, the format changes when you resize the page.
+    This is because the page is not responsive.
+
+To make websites responsive:
+Make CSS rules to size tags as needed.
+Typically, this is the functional parts first like the nav, and then the content.
+You will need to adjust the tags to work for all devices, or create two views: desktop and mobile.
+
+It depends on the website, but in most cases websites are accessed on mobile devices most of the time.
+    For this reason, it makes sense to start with a mobile page first, then make a desktop page nowadays.
+    This is different than the past, where mobile pages were not as necessary.
+
+@media screen and (){}
+    If the condition in the () is true, then the CSS rule within the {} will be applied.
+    You can use this to check if:
+        max-width: 400px
+    This is a check for device screen width.
+
+Desktop-down approach
+This entails making rules starting with larger pixel limits, then smaller limits.
+    Ex: 
+    @media screen and (max-width: 800px){}
+    @media screen adn (max-width: 400px){}
+
+Mobile-first approach
+This entails using min-width and using rules for small devices first, then larger devices.
+    Ex:
+    @media screen adn (min-width: 400px){}
+    @media screen and (min-width: 800px){}
+
+These are CSS media 'queries'.
+
+While those pixel estimates work, it doesn't guarantee that 800px is desktop and 400px is mobile.
+The better and more proper approach is to find what pixel limit ruins a design, and make rules for those pixel numbers.
+    With that, test the page to see at what pixel number it needs a redesign, and redesign with rules based on that pixel number.
+
+Live Stream's devloper tools lets you see the pixel numbers.
+
+One way to make a different view is to use classes for tags to change per view,
+    and set rules for them to look like you want when in the differnt views.
+
+So, it's media queries that make pages responsive per device view.
+You'll have to toy around with the best ways to do this.
+
+Some flex-box properties can let you do away with media queries.
+'flex-wrap: wrap;'
+    This for example can move flex content to stack automatically.
+
+Images will need to be edited as well, use CSS rules for this.

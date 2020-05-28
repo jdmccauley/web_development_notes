@@ -1,0 +1,66 @@
+Web Development Notes, CSS Selectors
+
+Video 6: CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners
+
+CSS Rule has 2 things:
+1. Selector
+2. Property
+
+So far, we've been declaring rules with selectors based on tags.
+CSS classes let you make rules for specificly-placed tags.
+
+Additionally, you can note which tag to select within a tag:
+section div li{}
+    This makes a rule for the list within the div within the section.
+You an use commas for multiple:
+section div, li{}
+    This makes a rule for list and div within section.
+
+In general: 
+    spaces in selectors note which tags within tags
+    commas make a list of tags to select
+
+Classes
+HTML tags can have a 'class', and the class name must not have spaces.
+    Ex: <section class="about_me">
+For multiple classes, use a space.
+    Ex: <section class="about_me contact">
+        This section's class is 'about_me' and 'contact'.
+
+CSS rules can then be specific to the class, with a '.'
+    Ex: section.about_me{}
+
+Note that like above, spaces and commas can be used.
+    Ex: section.about_me div{}
+        This makes a rule for the div in section of class 'about_me'.
+    Ex: section.about_me div,header {}
+        This makes a rule for the div and header in section of class 'about_me'.
+    
+For multiple classes, use another '.'
+    Ex: section.about_me.contact {}
+        This makes a rule for sections of class 'about_me' and 'contact'.
+
+Lastly, you can just make rules for classes without noting the tag.
+    Ex: .about_me {}
+        This makes a rule for all tags of class 'about_me'
+    
+DRY: Don't Repeat Yourself
+This is great practice in web development. Make fewer rules when possible to not repeat yourself.
+
+IDs
+IDs work similarly to classes for tags and CSS rules.
+To make an id, declare it as an attribute in the tag.
+    Ex: <section id="me">
+
+For the CSS rule, use '#' to specify an id
+    Ex: #me{}
+        This makes a rule for tags of id 'me'.
+
+IDs are only allowed one per page. Try not to use them since classes can work just as well most of the time.
+
+pseudo classes
+You can target specific tags with pseudo-classes, which are un-declared attributes.
+They are based in the parent-child system, where child tags are contained within parent tags.
+Pseudo classes can be called with a ':'
+    Ex: section:first-child{}
+        This makes a rule for the first section of the page.

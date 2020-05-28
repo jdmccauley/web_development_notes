@@ -1,0 +1,56 @@
+Web Development Notes, Layouts
+
+Video 3: Hand-Code an HTML+CSS Layout
+https://www.youtube.com/watch?v=dMK_3lH1YPo
+
+<div> tags make dividers, or spanning boxes in the page.
+    These were very popular for a long time, in fact so popular that there was an update to make kinds of div tags.
+    These include the header, nav, section, and footer tags.
+    The div tag was novel since it allows pages to be divided into pages.
+
+When designing a website to look like a given layout (some example website), it's useful to break down the
+    page into component sections, and start writing the html/css code to produce those sections.
+
+Learning how to achieve a certain layout needs lots of web searching, which is part of any code development.
+
+Some useful tags:
+<header>
+<section>
+<footer>
+
+How to add spacing around tags:
+CSS properties
+1. margin
+    This allows you to specify pixels for the margins around sections
+    One value is on left and right
+    Two values gives top/bottom and left/right
+    Four values gives margin specified for all directions
+2. Padding
+    This gives you spacing in your section between the content and the total size of the tag
+    Learn more about this later
+
+Note that for these, you can also use % instead of pixels
+    Percent lets the page scale with the size of the browser window
+
+Video 4: Build an HTML + CSS Layout with Flexbox in just a few lines of code
+https://www.youtube.com/watch?v=aRMIdKRYg6c
+
+This is a continuation of the same topic.
+
+In CSS:
+'display: inline;'
+    This lets you shape the size of a container (like a section) to be the size of the content
+    inline-block lets you specify the size of the blocks
+
+'display: flex;'
+    This must be put in a parent section (the html parent)
+    This lets you add more css rules:
+    'flex-direction: row, column, row-reverse, column-reverse...;'
+        This lets you space multiple sections horizontally.
+
+Flexbox
+    This is how you make horizontal content in a page. Very important.
+    Just look this up because the video is so fast.
+    Very powerful thing to understand.
+<nav>
+    This is a html tag for navigation, you can contain it in a section like a header (for example).
